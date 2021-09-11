@@ -16,22 +16,50 @@ object Libs {
 
     const val core_ktx: String = "androidx.core:core-ktx:_"
 
+    const val hilt_compiler: String = "androidx.hilt:hilt-compiler:_"
+
+    const val hilt_lifecycle_viewmodel: String = "androidx.hilt:hilt-lifecycle-viewmodel:_"
+
+    const val lifecycle_runtime_ktx: String = "androidx.lifecycle:lifecycle-runtime-ktx:_"
+
+    const val lifecycle_viewmodel_ktx: String = "androidx.lifecycle:lifecycle-viewmodel-ktx:_"
+
+    const val startup_runtime: String = "androidx.startup:startup-runtime:_"
+
     const val espresso_core: String = "androidx.test.espresso:espresso-core:_"
 
     const val androidx_test_ext_junit: String = "androidx.test.ext:junit:_"
 
-    const val com_android_tools_build_gradle: String = "com.android.tools.build:gradle:_"
+    const val stetho: String = "com.facebook.stetho:stetho:_"
 
-    const val lint_gradle: String = "com.android.tools.lint:lint-gradle:_"
+    const val stetho_okhttp3: String = "com.facebook.stetho:stetho-okhttp3:_"
+
+    const val library: String = "com.github.chuckerteam.chucker:library:_"
 
     const val material: String = "com.google.android.material:material:_"
 
-    const val de_fayard_buildsrclibs_gradle_plugin: String =
-        "de.fayard.buildSrcLibs:de.fayard.buildSrcLibs.gradle.plugin:_"
+    const val hilt_android: String = "com.google.dagger:hilt-android:_"
+
+    const val hilt_android_compiler: String = "com.google.dagger:hilt-android-compiler:_"
+
+    const val firebase_analytics_ktx: String = "com.google.firebase:firebase-analytics-ktx:_"
+
+    const val firebase_crashlytics_ktx: String = "com.google.firebase:firebase-crashlytics-ktx:_"
+
+    const val timber: String = "com.jakewharton.timber:timber:_"
+
+    const val logging_interceptor: String = "com.squareup.okhttp3:logging-interceptor:_"
+
+    const val okhttp: String = "com.squareup.okhttp3:okhttp:_"
+
+    const val converter_gson: String = "com.squareup.retrofit2:converter-gson:_"
+
+    const val retrofit: String = "com.squareup.retrofit2:retrofit:_"
 
     const val junit_junit: String = "junit:junit:_"
 
-    const val org_jacoco_ant: String = "org.jacoco:org.jacoco.ant:_"
+    const val kotlinx_coroutines_android: String =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:_"
 
-    const val kotlin_gradle_plugin: String = "org.jetbrains.kotlin:kotlin-gradle-plugin:_"
+    const val kotlinx_coroutines_core: String = "org.jetbrains.kotlinx:kotlinx-coroutines-core:_"
 }
