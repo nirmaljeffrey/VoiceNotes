@@ -1,3 +1,6 @@
+import java.io.FileInputStream
+import java.util.*
+
 plugins {
     id("com.android.application")
     id("kotlin-android")
@@ -6,6 +9,9 @@ plugins {
     id("com.google.gms.google-services")
     id("com.google.firebase.crashlytics")
 }
+
+val properties = Properties()
+properties.load(FileInputStream(rootProject.file("local.properties")))
 
 android {
     compileSdk = 30
@@ -18,6 +24,15 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        create("release") {
+            keyAlias = properties["RELEASE_KEY_ALIAS"] as String
+            keyPassword = properties["RELEASE_KEY_PASSWORD"] as String
+            storeFile = file(properties["RELEASE_KEYSTORE_PATH"] as String)
+            storePassword = properties["RELEASE_KEYSTORE_PASSWORD"] as String
+        }
     }
     buildTypes {
         getByName("release") {
