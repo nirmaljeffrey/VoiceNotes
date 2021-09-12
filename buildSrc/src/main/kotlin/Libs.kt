@@ -24,6 +24,14 @@ object Libs {
 
     const val lifecycle_viewmodel_ktx: String = "androidx.lifecycle:lifecycle-viewmodel-ktx:_"
 
+    const val room_compiler: String = "androidx.room:room-compiler:_"
+
+    const val room_ktx: String = "androidx.room:room-ktx:_"
+
+    const val room_runtime: String = "androidx.room:room-runtime:_"
+
+    const val room_testing: String = "androidx.room:room-testing:_"
+
     const val startup_runtime: String = "androidx.startup:startup-runtime:_"
 
     const val espresso_core: String = "androidx.test.espresso:espresso-core:_"

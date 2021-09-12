@@ -88,4 +88,10 @@ dependencies {
     kapt(Libs.hilt_compiler)
     // App Startup
     implementation(Libs.startup_runtime)
+    // room
+    implementation(Libs.room_runtime)
+    kapt(Libs.room_compiler)
+    implementation(Libs.room_ktx)
+    testImplementation(Libs.room_testing)
+
 }
