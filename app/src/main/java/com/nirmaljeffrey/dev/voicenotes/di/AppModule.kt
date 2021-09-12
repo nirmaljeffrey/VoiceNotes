@@ -1,8 +1,11 @@
 package com.nirmaljeffrey.dev.voicenotes.di
 
 import android.content.Context
+import androidx.room.Room
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.crashlytics.FirebaseCrashlytics
+import com.nirmaljeffrey.dev.voicenotes.persistance.AppDatabase
+import com.nirmaljeffrey.dev.voicenotes.persistance.dao.VoiceNoteDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -16,14 +19,25 @@ abstract class AppModule {
     companion object {
         @Provides
         @Singleton
-        fun providesFirebaseCrashlytics(): FirebaseCrashlytics {
-            return FirebaseCrashlytics.getInstance()
+        fun providesFirebaseCrashlytics(): FirebaseCrashlytics = FirebaseCrashlytics.getInstance()
+
+        @Provides
+        @Singleton
+        fun providesFirebaseAnalytics(@ApplicationContext context: Context): FirebaseAnalytics =
+            FirebaseAnalytics.getInstance(context)
+
+        @Provides
+        @Singleton
+        fun providesAppDatabase(@ApplicationContext context: Context): AppDatabase {
+            return Room.databaseBuilder(
+                context,
+                AppDatabase::class.java, "app-database"
+            ).build()
         }
 
         @Provides
         @Singleton
-        fun providesFirebaseAnalytics(@ApplicationContext context: Context): FirebaseAnalytics {
-            return FirebaseAnalytics.getInstance(context)
-        }
+        fun providesVoiceNoteDao(appDatabase: AppDatabase): VoiceNoteDao =
+            appDatabase.voiceNoteDao()
     }
 }

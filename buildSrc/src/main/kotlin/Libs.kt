@@ -12,13 +12,29 @@
 object Libs {
     const val appcompat: String = "androidx.appcompat:appcompat:_"
 
+    const val cardview: String = "androidx.cardview:cardview:_"
+
     const val constraintlayout: String = "androidx.constraintlayout:constraintlayout:_"
 
     const val core_ktx: String = "androidx.core:core-ktx:_"
 
+    const val databinding_adapters: String = "androidx.databinding:databinding-adapters:_"
+
+    const val databinding_common: String = "androidx.databinding:databinding-common:_"
+
+    const val databinding_compiler: String = "androidx.databinding:databinding-compiler:_"
+
+    const val databinding_ktx: String = "androidx.databinding:databinding-ktx:_"
+
+    const val databinding_runtime: String = "androidx.databinding:databinding-runtime:_"
+
     const val hilt_compiler: String = "androidx.hilt:hilt-compiler:_"
 
     const val hilt_lifecycle_viewmodel: String = "androidx.hilt:hilt-lifecycle-viewmodel:_"
+
+    const val legacy_support_v4: String = "androidx.legacy:legacy-support-v4:_"
+
+    const val lifecycle_common_java8: String = "androidx.lifecycle:lifecycle-common-java8:_"
 
     const val lifecycle_runtime_ktx: String = "androidx.lifecycle:lifecycle-runtime-ktx:_"
 
@@ -44,6 +60,10 @@ object Libs {
 
     const val androidx_test_ext_junit: String = "androidx.test.ext:junit:_"
 
+    const val com_android_tools_build_gradle: String = "com.android.tools.build:gradle:_"
+
+    const val lint_gradle: String = "com.android.tools.lint:lint-gradle:_"
+
     const val stetho: String = "com.facebook.stetho:stetho:_"
 
     const val stetho_okhttp3: String = "com.facebook.stetho:stetho-okhttp3:_"
@@ -56,9 +76,16 @@ object Libs {
 
     const val hilt_android_compiler: String = "com.google.dagger:hilt-android-compiler:_"
 
+    const val hilt_android_gradle_plugin: String = "com.google.dagger:hilt-android-gradle-plugin:_"
+
     const val firebase_analytics_ktx: String = "com.google.firebase:firebase-analytics-ktx:_"
 
+    const val firebase_crashlytics_gradle: String =
+        "com.google.firebase:firebase-crashlytics-gradle:_"
+
     const val firebase_crashlytics_ktx: String = "com.google.firebase:firebase-crashlytics-ktx:_"
+
+    const val google_services: String = "com.google.gms:google-services:_"
 
     const val timber: String = "com.jakewharton.timber:timber:_"
 
@@ -70,7 +97,20 @@ object Libs {
 
     const val retrofit: String = "com.squareup.retrofit2:retrofit:_"
 
+    const val de_fayard_buildsrclibs_gradle_plugin: String =
+        "de.fayard.buildSrcLibs:de.fayard.buildSrcLibs.gradle.plugin:_"
+
+    const val scabbard_gradle_plugin: String =
+        "gradle.plugin.dev.arunkumar:scabbard-gradle-plugin:_"
+
     const val junit_junit: String = "junit:junit:_"
+
+    const val org_jacoco_ant: String = "org.jacoco:org.jacoco.ant:_"
+
+    const val kotlin_annotation_processing_gradle: String =
+        "org.jetbrains.kotlin:kotlin-annotation-processing-gradle:_"
+
+    const val kotlin_gradle_plugin: String = "org.jetbrains.kotlin:kotlin-gradle-plugin:_"
 
     const val kotlinx_coroutines_android: String =
         "org.jetbrains.kotlinx:kotlinx-coroutines-android:_"

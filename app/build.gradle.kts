@@ -25,6 +25,9 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+    buildFeatures {
+        dataBinding = true
+    }
 
     signingConfigs {
         create("release") {
@@ -67,6 +70,8 @@ dependencies {
     // Firebase
     implementation(Libs.firebase_analytics_ktx)
     implementation(Libs.firebase_crashlytics_ktx)
+    implementation("androidx.legacy:legacy-support-v4:1.0.0")
+    implementation("androidx.lifecycle:lifecycle-common-java8:2.3.1")
 
     debugImplementation(Libs.logging_interceptor)
     debugImplementation(Libs.stetho)
@@ -97,5 +102,6 @@ dependencies {
     implementation(Libs.navigation_fragment_ktx)
     implementation(Libs.navigation_ui_ktx)
     androidTestImplementation(Libs.navigation_testing)
+    implementation(Libs.cardview)
 
 }
