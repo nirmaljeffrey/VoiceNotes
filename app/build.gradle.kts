@@ -93,5 +93,9 @@ dependencies {
     kapt(Libs.room_compiler)
     implementation(Libs.room_ktx)
     testImplementation(Libs.room_testing)
+    // Navigation
+    implementation(Libs.navigation_fragment_ktx)
+    implementation(Libs.navigation_ui_ktx)
+    androidTestImplementation(Libs.navigation_testing)
 
 }

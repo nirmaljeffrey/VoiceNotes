@@ -24,6 +24,12 @@ object Libs {
 
     const val lifecycle_viewmodel_ktx: String = "androidx.lifecycle:lifecycle-viewmodel-ktx:_"
 
+    const val navigation_fragment_ktx: String = "androidx.navigation:navigation-fragment-ktx:_"
+
+    const val navigation_testing: String = "androidx.navigation:navigation-testing:_"
+
+    const val navigation_ui_ktx: String = "androidx.navigation:navigation-ui-ktx:_"
+
     const val room_compiler: String = "androidx.room:room-compiler:_"
 
     const val room_ktx: String = "androidx.room:room-ktx:_"
