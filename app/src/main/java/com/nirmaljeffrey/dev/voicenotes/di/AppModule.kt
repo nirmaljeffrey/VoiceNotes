@@ -4,8 +4,8 @@ import android.content.Context
 import androidx.room.Room
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.crashlytics.FirebaseCrashlytics
-import com.nirmaljeffrey.dev.voicenotes.persistance.AppDatabase
-import com.nirmaljeffrey.dev.voicenotes.persistance.dao.VoiceNoteDao
+import com.nirmaljeffrey.dev.voicenotes.data.persistance.AppDatabase
+import com.nirmaljeffrey.dev.voicenotes.data.persistance.dao.VoiceNoteDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

@@ -1,4 +1,4 @@
-package com.nirmaljeffrey.dev.voicenotes.intiliazers
+package com.nirmaljeffrey.dev.voicenotes.di.intiliazers
 
 import android.content.Context
 import androidx.startup.Initializer

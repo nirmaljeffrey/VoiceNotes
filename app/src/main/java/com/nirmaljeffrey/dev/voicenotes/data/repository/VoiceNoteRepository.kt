@@ -1,6 +1,6 @@
-package com.nirmaljeffrey.dev.voicenotes.repository
+package com.nirmaljeffrey.dev.voicenotes.data.repository
 
-import com.nirmaljeffrey.dev.voicenotes.persistance.dao.VoiceNoteDao
+import com.nirmaljeffrey.dev.voicenotes.data.persistance.dao.VoiceNoteDao
 import dagger.hilt.android.scopes.ViewModelScoped
 import javax.inject.Inject
 

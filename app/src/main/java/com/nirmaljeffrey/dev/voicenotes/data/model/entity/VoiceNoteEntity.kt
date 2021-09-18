@@ -1,4 +1,4 @@
-package com.nirmaljeffrey.dev.voicenotes.data.entity
+package com.nirmaljeffrey.dev.voicenotes.data.model.entity
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

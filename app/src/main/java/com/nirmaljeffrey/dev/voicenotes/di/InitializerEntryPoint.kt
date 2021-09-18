@@ -1,7 +1,7 @@
 package com.nirmaljeffrey.dev.voicenotes.di
 
 import android.content.Context
-import com.nirmaljeffrey.dev.voicenotes.intiliazers.TimberInitializer
+import com.nirmaljeffrey.dev.voicenotes.di.intiliazers.TimberInitializer
 import dagger.hilt.EntryPoint
 import dagger.hilt.InstallIn
 import dagger.hilt.android.EntryPointAccessors

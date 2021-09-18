@@ -1,10 +1,10 @@
-package com.nirmaljeffrey.dev.voicenotes.persistance.dao
+package com.nirmaljeffrey.dev.voicenotes.data.persistance.dao
 
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
-import com.nirmaljeffrey.dev.voicenotes.data.entity.VoiceNoteEntity
+import com.nirmaljeffrey.dev.voicenotes.data.model.entity.VoiceNoteEntity
 
 @Dao
 interface VoiceNoteDao {

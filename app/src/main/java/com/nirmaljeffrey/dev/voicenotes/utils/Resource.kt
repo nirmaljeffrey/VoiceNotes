@@ -1,6 +1,6 @@
 package com.nirmaljeffrey.dev.voicenotes.utils
 
-import com.nirmaljeffrey.dev.voicenotes.data.state.State
+import com.nirmaljeffrey.dev.voicenotes.data.model.state.State
 
 // A generic class that contains data and status about loading this data.
 sealed class Resource<T : State>(
